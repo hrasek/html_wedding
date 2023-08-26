@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Page Title</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="menu_choice.js">
+    </script>
   </head>
   <body>
     <header>
@@ -22,21 +24,26 @@
     </header>
 
     <main>
-      <section>
+      <div>
         <p>
-          Zde se dozvíte všechny nezbytné informace o naší nadcházející svatbě.
-          Pokud byste ovšem i tak přišli na něco, co Vám zde chybí, nebojte se
-          nám ozvat na neailovou adresu. Tu najdete v sekci kontakty.
+          V této části se dozvíte, jaké vás čeká obědové menu v závislosti na dietě, kterou máte. Na výběr máte ze 3 variant a to bez diety, bezlepkovou dietu a vegetariánskou dietu.
         </p>
-      </section>
-      <table>
-        <tr>
-            <td>Nevěsta</td>
-        </tr>
-        <tr>
-            <td>Ženich</td>
-        </tr>
-    </table>
+      </div>
+      <ul>
+        <li id="bezdiety"><button type="button" onclick="Bezdiety()">Bez diety</button></li>
+        <br>
+        <p id="bezdietyOutput"></p>
+        <br>
+        <li id="bezlepku"><button type="button" onclick="Bezlepku()">Bezlepková dieta</button></li>
+        <br>
+        <p id="bezlepkuOutput"></p>
+        <br>
+        <li id="vege"><button type="button" onclick="Vege()">Vegetariánská dieta</button></li>  
+        <br>
+        <p id="vegeOutput"></p>
+
+      </ul>
+
 
 
     </main>
